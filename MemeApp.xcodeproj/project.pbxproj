@@ -9,23 +9,25 @@
 /* Begin PBXBuildFile section */
 		9F25422622C7EF9C00A1FBD6 /* Meme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F25422522C7EF9C00A1FBD6 /* Meme.swift */; };
 		9FC4C70922BFBA6F00B19AEE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC4C70822BFBA6F00B19AEE /* AppDelegate.swift */; };
-		9FC4C70B22BFBA6F00B19AEE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC4C70A22BFBA6F00B19AEE /* ViewController.swift */; };
+		9FC4C70B22BFBA6F00B19AEE /* MemeEditorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC4C70A22BFBA6F00B19AEE /* MemeEditorViewController.swift */; };
 		9FC4C70E22BFBA6F00B19AEE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FC4C70C22BFBA6F00B19AEE /* Main.storyboard */; };
 		9FC4C71022BFBA7100B19AEE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9FC4C70F22BFBA7100B19AEE /* Assets.xcassets */; };
 		9FC4C71322BFBA7100B19AEE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FC4C71122BFBA7100B19AEE /* LaunchScreen.storyboard */; };
 		9FC4C71B22C0ECF600B19AEE /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC4C71A22C0ECF600B19AEE /* ImagePicker.swift */; };
+		9FCDB5D722E4A71700731790 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FCDB5D622E4A71700731790 /* TabBarViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		9F25422522C7EF9C00A1FBD6 /* Meme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meme.swift; sourceTree = "<group>"; };
 		9FC4C70522BFBA6F00B19AEE /* MemeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MemeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FC4C70822BFBA6F00B19AEE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9FC4C70A22BFBA6F00B19AEE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9FC4C70A22BFBA6F00B19AEE /* MemeEditorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemeEditorViewController.swift; sourceTree = "<group>"; };
 		9FC4C70D22BFBA6F00B19AEE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9FC4C70F22BFBA7100B19AEE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9FC4C71222BFBA7100B19AEE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9FC4C71422BFBA7200B19AEE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9FC4C71A22C0ECF600B19AEE /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		9FCDB5D622E4A71700731790 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,8 +60,9 @@
 		9FC4C70722BFBA6F00B19AEE /* MemeApp */ = {
 			isa = PBXGroup;
 			children = (
+				9FCDB5D622E4A71700731790 /* TabBarViewController.swift */,
 				9FC4C70822BFBA6F00B19AEE /* AppDelegate.swift */,
-				9FC4C70A22BFBA6F00B19AEE /* ViewController.swift */,
+				9FC4C70A22BFBA6F00B19AEE /* MemeEditorViewController.swift */,
 				9FC4C70C22BFBA6F00B19AEE /* Main.storyboard */,
 				9FC4C70F22BFBA7100B19AEE /* Assets.xcassets */,
 				9FC4C71122BFBA7100B19AEE /* LaunchScreen.storyboard */,
@@ -143,7 +146,8 @@
 			files = (
 				9FC4C71B22C0ECF600B19AEE /* ImagePicker.swift in Sources */,
 				9F25422622C7EF9C00A1FBD6 /* Meme.swift in Sources */,
-				9FC4C70B22BFBA6F00B19AEE /* ViewController.swift in Sources */,
+				9FC4C70B22BFBA6F00B19AEE /* MemeEditorViewController.swift in Sources */,
+				9FCDB5D722E4A71700731790 /* TabBarViewController.swift in Sources */,
 				9FC4C70922BFBA6F00B19AEE /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

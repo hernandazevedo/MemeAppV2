@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController , UIImagePickerControllerDelegate {
+class MemeEditorViewController: UIViewController , UIImagePickerControllerDelegate {
 
     @IBOutlet weak var imageView: UIImageView!
     var imagePicker: ImagePicker!
@@ -23,10 +23,10 @@ class ViewController: UIViewController , UIImagePickerControllerDelegate {
     var meme: Meme?
     
     let memeTextAttributes: [NSAttributedString.Key: Any] = [
-        NSAttributedString.Key.strokeColor: UIColor.black,
-        NSAttributedString.Key.foregroundColor: UIColor.white,
-        NSAttributedString.Key.font: UIFont(name: "HelveticaNeue-CondensedBlack", size: 40)!,
-        NSAttributedString.Key.strokeWidth:  -2.0
+        .strokeColor: UIColor.black,
+        .foregroundColor: UIColor.white,
+        .font: UIFont(name: "HelveticaNeue-CondensedBlack", size: 40)!,
+        .strokeWidth: -2.0
     ]
     
     override func viewWillAppear(_ animated: Bool) {
@@ -147,7 +147,7 @@ class ViewController: UIViewController , UIImagePickerControllerDelegate {
     
 }
 
-extension ViewController: ImagePickerDelegate {
+extension MemeEditorViewController: ImagePickerDelegate {
     
     func didSelect(image: UIImage?) {
         self.imageView.image = image
@@ -156,7 +156,7 @@ extension ViewController: ImagePickerDelegate {
     
 }
 
-extension ViewController: UITextFieldDelegate {
+extension MemeEditorViewController: UITextFieldDelegate {
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()
