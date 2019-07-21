@@ -20,7 +20,8 @@ class MemeEditorViewController: UIViewController , UIImagePickerControllerDelega
     
     @IBOutlet weak var navigationBar: UINavigationBar!
     @IBOutlet weak var toolBar: UIToolbar!
-    var meme: Meme?
+    
+    let appDelegate = UIApplication.shared.delegate as! AppDelegate
     
     let memeTextAttributes: [NSAttributedString.Key: Any] = [
         .strokeColor: UIColor.black,
@@ -107,7 +108,6 @@ class MemeEditorViewController: UIViewController , UIImagePickerControllerDelega
     }
     
     func configureInitialState() {
-        meme = Meme()
         cameraButton.isEnabled = UIImagePickerController.isSourceTypeAvailable(.camera)
         shareButton.isEnabled = false
         imageView.image = nil
@@ -117,7 +117,9 @@ class MemeEditorViewController: UIViewController , UIImagePickerControllerDelega
     
     func save(_ memedImage: UIImage) {
         // Cr_ meme
-        self.meme = Meme(topText: textFieldTop.text!, bottomText: textFieldBottom.text!, originalImage: imageView.image!, memedImage: memedImage)
+        let meme = Meme(topText: textFieldTop.text!, bottomText: textFieldBottom.text!, originalImage: imageView.image!, memedImage: memedImage)
+        
+        appDelegate.memeList.append(meme)
     }
     
     func generateMemedImage() -> UIImage {

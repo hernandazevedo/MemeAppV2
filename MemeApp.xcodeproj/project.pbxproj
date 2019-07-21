@@ -14,6 +14,8 @@
 		9FC4C71022BFBA7100B19AEE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9FC4C70F22BFBA7100B19AEE /* Assets.xcassets */; };
 		9FC4C71322BFBA7100B19AEE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FC4C71122BFBA7100B19AEE /* LaunchScreen.storyboard */; };
 		9FC4C71B22C0ECF600B19AEE /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC4C71A22C0ECF600B19AEE /* ImagePicker.swift */; };
+		9FCDB5D922E4DDDE00731790 /* MemeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FCDB5D822E4DDDE00731790 /* MemeTableViewController.swift */; };
+		9FCDB5DD22E4F0BB00731790 /* MemeDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FCDB5DC22E4F0BB00731790 /* MemeDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		9FC4C71222BFBA7100B19AEE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9FC4C71422BFBA7200B19AEE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9FC4C71A22C0ECF600B19AEE /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		9FCDB5D822E4DDDE00731790 /* MemeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemeTableViewController.swift; sourceTree = "<group>"; };
+		9FCDB5DC22E4F0BB00731790 /* MemeDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemeDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +62,7 @@
 		9FC4C70722BFBA6F00B19AEE /* MemeApp */ = {
 			isa = PBXGroup;
 			children = (
+				9FCDB5DC22E4F0BB00731790 /* MemeDetailViewController.swift */,
 				9FC4C70822BFBA6F00B19AEE /* AppDelegate.swift */,
 				9FC4C70A22BFBA6F00B19AEE /* MemeEditorViewController.swift */,
 				9FC4C70C22BFBA6F00B19AEE /* Main.storyboard */,
@@ -66,6 +71,7 @@
 				9FC4C71422BFBA7200B19AEE /* Info.plist */,
 				9FC4C71A22C0ECF600B19AEE /* ImagePicker.swift */,
 				9F25422522C7EF9C00A1FBD6 /* Meme.swift */,
+				9FCDB5D822E4DDDE00731790 /* MemeTableViewController.swift */,
 			);
 			path = MemeApp;
 			sourceTree = "<group>";
@@ -144,6 +150,8 @@
 				9FC4C71B22C0ECF600B19AEE /* ImagePicker.swift in Sources */,
 				9F25422622C7EF9C00A1FBD6 /* Meme.swift in Sources */,
 				9FC4C70B22BFBA6F00B19AEE /* MemeEditorViewController.swift in Sources */,
+				9FCDB5DD22E4F0BB00731790 /* MemeDetailViewController.swift in Sources */,
+				9FCDB5D922E4DDDE00731790 /* MemeTableViewController.swift in Sources */,
 				9FC4C70922BFBA6F00B19AEE /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
