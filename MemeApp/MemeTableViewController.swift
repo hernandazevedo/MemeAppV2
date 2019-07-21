@@ -13,9 +13,8 @@ private let showDetailSegueIdentifier = "showTableCellSegue"
 private let showDetailCellHeight: CGFloat = 100.0
 private let showDetailNumberOfSections = 1
 
-class MemeTableViewController: UITableViewController {
+class MemeTableViewController: UITableViewController, DetailsNavigationProtocol {
 
-    
     let appDelegate = UIApplication.shared.delegate as! AppDelegate
 
     override func viewDidLoad() {
@@ -53,10 +52,7 @@ class MemeTableViewController: UITableViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == showDetailSegueIdentifier {
-            let memeDetailVC = segue.destination as! MemeDetailViewController
-            let currentSelectedMeme = sender as! Meme
-            memeDetailVC.hidesBottomBarWhenPushed = true
-            memeDetailVC.selectedMeme = currentSelectedMeme
+            prepareDetailSegue(segue, sender)
         }
     }
     

@@ -11,7 +11,7 @@ import UIKit
 private let reuseIdentifier = "collectionViewCell"
 private let showDetailSegueIdentifier = "showCollectionCellSegue"
 private let cellSpacing: CGFloat = 3.0
-class MemeCollectionViewController: UICollectionViewController {
+class MemeCollectionViewController: UICollectionViewController, DetailsNavigationProtocol {
     var memeList: [Meme]! {
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
         return appDelegate.memeList
@@ -52,10 +52,7 @@ class MemeCollectionViewController: UICollectionViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == showDetailSegueIdentifier {
-            let memeDetailVC = segue.destination as! MemeDetailViewController
-            let currentSelectedMeme = sender as! Meme
-            memeDetailVC.hidesBottomBarWhenPushed = true
-            memeDetailVC.selectedMeme = currentSelectedMeme
+            prepareDetailSegue(segue, sender)
         }
     }
     
