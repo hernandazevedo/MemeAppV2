@@ -8,12 +8,14 @@
 
 import UIKit
 
+private let reuseIdentifier = "tableViewCell"
+private let showDetailSegueIdentifier = "showTableCellSegue"
+private let showDetailCellHeight: CGFloat = 100.0
+private let showDetailNumberOfSections = 1
+
 class MemeTableViewController: UITableViewController {
 
-    private let cellReuseIdentifier = "tableViewCell"
-    private let showDetailSegueIdentifier = "showTableCellSegue"
-    private let cellHeight: CGFloat = 100.0
-    private let numberOfSections = 1
+    
     let appDelegate = UIApplication.shared.delegate as! AppDelegate
 
     override func viewDidLoad() {
@@ -29,7 +31,7 @@ class MemeTableViewController: UITableViewController {
     }
 
     override func numberOfSections(in tableView: UITableView) -> Int {
-        return numberOfSections
+        return showDetailNumberOfSections
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -37,7 +39,7 @@ class MemeTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let currentCell = tableView.dequeueReusableCell(withIdentifier: cellReuseIdentifier, for: indexPath)
+        let currentCell = tableView.dequeueReusableCell(withIdentifier: reuseIdentifier, for: indexPath)
         let currentMemeForIndex = appDelegate.memeList[indexPath.row]
         currentCell.imageView?.image = currentMemeForIndex.memedImage
         currentCell.textLabel?.text = currentMemeForIndex.topText + " - " + currentMemeForIndex.bottomText
@@ -59,6 +61,6 @@ class MemeTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return cellHeight
+        return showDetailCellHeight
     }
 }
