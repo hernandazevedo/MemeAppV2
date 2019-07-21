@@ -45,11 +45,11 @@
             </objects>
             <point key="canvasLocation" x="-1511" y="-334"/>
         </scene>
-        <!--Item-->
+        <!--Navigation Controller-->
         <scene sceneID="Atw-ri-E9D">
             <objects>
                 <navigationController id="ZE7-6S-B3Z" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="w2u-Ke-SXz"/>
+                    <tabBarItem key="tabBarItem" title="" image="table" selectedImage="table" id="w2u-Ke-SXz"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="aPS-Z0-VuP">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -62,11 +62,11 @@
             </objects>
             <point key="canvasLocation" x="-2463" y="-334"/>
         </scene>
-        <!--Collection-->
+        <!--Navigation Controller-->
         <scene sceneID="aMn-IE-USx">
             <objects>
                 <navigationController id="QBy-dW-SOu" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Collection" id="WN9-Xw-D3U"/>
+                    <tabBarItem key="tabBarItem" title="" image="collection" selectedImage="collection" id="WN9-Xw-D3U"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="P1P-Td-bMH">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -120,10 +120,10 @@
             </objects>
             <point key="canvasLocation" x="-1511" y="403"/>
         </scene>
-        <!--Tab Bar View Controller-->
+        <!--Tab Bar Controller-->
         <scene sceneID="S4O-cE-8xn">
             <objects>
-                <tabBarController id="Apt-UF-6Ld" customClass="TabBarViewController" customModule="MemeApp" customModuleProvider="target" sceneMemberID="viewController">
+                <tabBarController id="Apt-UF-6Ld" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="fGU-ed-ftx">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -252,6 +252,10 @@
             <point key="canvasLocation" x="-530" y="8"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="collection" width="30" height="30.5"/>
+        <image name="table" width="30" height="30"/>
+    </resources>
     <inferredMetricsTieBreakers>
         <segue reference="sGb-ny-U3O"/>
     </inferredMetricsTieBreakers>
