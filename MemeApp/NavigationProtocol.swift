@@ -9,11 +9,11 @@
 import UIKit
 
 protocol DetailsNavigationProtocol {
-     func prepareDetailSegue(_ segue: UIStoryboardSegue, _ sender: Any?)
+     func prepareForDetailSegue(_ segue: UIStoryboardSegue, _ sender: Any?)
 }
 
 extension DetailsNavigationProtocol {
-    func prepareDetailSegue(_ segue: UIStoryboardSegue, _ sender: Any?) {
+    func prepareForDetailSegue(_ segue: UIStoryboardSegue, _ sender: Any?) {
         let memeDetailVC = segue.destination as! MemeDetailViewController
         let currentSelectedMeme = sender as! Meme
         memeDetailVC.hidesBottomBarWhenPushed = true

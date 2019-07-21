@@ -52,7 +52,7 @@ class MemeCollectionViewController: UICollectionViewController, DetailsNavigatio
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == showDetailSegueIdentifier {
-            prepareDetailSegue(segue, sender)
+            prepareForDetailSegue(segue, sender)
         }
     }
     

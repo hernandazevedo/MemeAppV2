@@ -55,8 +55,8 @@ class MemeEditorViewController: UIViewController , UIImagePickerControllerDelega
     }
     
     @IBAction func cancel(_ sender: UIBarButtonItem) {
-        configureInitialState()
         dismissKeyboard()
+        self.dismiss(animated: true, completion: nil)
     }
     
     @IBAction func shareImage(_ sender: UIBarButtonItem) {
