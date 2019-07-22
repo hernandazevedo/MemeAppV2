@@ -55,7 +55,6 @@ class MemeEditorViewController: UIViewController , UIImagePickerControllerDelega
     }
     
     @IBAction func cancel(_ sender: UIBarButtonItem) {
-        dismissKeyboard()
         self.dismiss(animated: true, completion: nil)
     }
     
@@ -141,12 +140,7 @@ class MemeEditorViewController: UIViewController , UIImagePickerControllerDelega
         navigationBar.isHidden = isHidden
         toolBar.isHidden = isHidden
     }
-    
-    func dismissKeyboard() {
-        //Causes the view (or one of its embedded text fields) to resign the first responder status.
-        view.endEditing(true)
-    }
-    
+
 }
 
 extension MemeEditorViewController: ImagePickerDelegate {
