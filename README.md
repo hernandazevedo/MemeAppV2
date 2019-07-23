@@ -31,7 +31,7 @@ You will create an app that enables a user to take a picture, and add text at th
 1. [Read the project specification](https://docs.google.com/document/d/1G2onkzN_weWmiYErhQJw1lB9-zxM-2TQ0N5bNMAaI7I/pub?embedded=true) and/or download an [example of the app](https://itunes.apple.com/us/app/mememe-portfolio-app/id994289240?mt=8).
 2. Review the [grading rubric](https://review.udacity.com/#!/rubrics/1960/view) to see how your project will be assessed. All criteria must "meet specifications" in order to pass.
 3. If desired, download a collection of images used in the app. (Available in the **Supporting Materials** section below.)
-4. If necessary, review [Lesson 3 of UIKit Fundamentals II](https://www.udacity.com/course/uikit-fundamentals--ud788) for detailed instructions.
+4. If necessary, review [Lesson 3 of UIKit Fundamentals II](https://www.udacity.com/course/uikit-fundamentals--ud788) and [AutoLayout](https://www.udacity.com/course/auto-layout--ud1026) for detailed instructions.
 5. Create your app!
 
 ## Submission
